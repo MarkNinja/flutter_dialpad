@@ -297,6 +297,7 @@ class _DialPadState extends State<DialPad> {
   void _onDialPressed() {
     if (widget.makeCall != null && _value.isNotEmpty) {
       widget.makeCall!(_value);
+      _value = "";
     }
   }
 
